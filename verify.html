@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex,nofollow">
+  <link rel="shortcut icon" href="https://ok14static.oktacdn.com/bc/image/fileStoreRecord?id=fs065jtu1l3MJDDU3697"
+    type="image/x-icon">
+  <title>Kyndryl oneID - Sign In</title>
+  <link rel="stylesheet" type="text/css"
+    href="https://ok14static.oktacdn.com/assets/js/sdk/okta-signin-widget/6.9.0/css/okta-sign-in.min.css"
+    crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css"
+    href="https://ok14static.oktacdn.com/assets/loginpage/css/custom-signin.a91af2abfd04662e499bd3e151150dbf.css"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="login-bg-image tb--background"
+    style="background-image: url('https://ok14static.oktacdn.com/fs/bco/7/fs065jtu208mQwndp697')"></div>
+  <div id="okta-login-container">
+    <main data-se="auth-container" tabindex="-1" id="okta-sign-in"
+      class="auth-container main-container" style="display: block;">
+      <div class="okta-sign-in-header auth-header">
+        <h1><img src="https://ok14static.oktacdn.com/fs/bco/1/fs065jtu1jD9lsRia697" class="auth-org-logo"
+            alt="Kyndryl oneID logo" aria-label="Kyndryl oneID logo"></h1>
+        <div data-type="beacon-container" class="beacon-container"
+          style="transform: scale(1, 1); text-indent: 1px;">
+          <div class="beacon-blank auth-beacon">
+            <div class="beacon-blank js-blank-beacon-border auth-beacon-border"></div>
+          </div>
+          <div class="bg-helper auth-beacon auth-beacon-factor mfa-okta-password" data-se="factor-beacon">
+            <div class="okta-sign-in-beacon-border auth-beacon-border"></div>
+          </div>
+        </div>
+      </div>
+      <div class="auth-content">
+        <div class="auth-content-inner">
+          <div class="siw-main-view challenge-authenticator--okta_password mfa-verify-password">
+            <div class="siw-main-header">
+              <div></div>
+            </div>
+            <div class="siw-main-body">
+              <form data-se="o-form" id="verify-form" class="ion-form o-form o-form-edit-mode">
+                <div data-se="o-form-content" class="o-form-content o-form-theme clearfix">
+                  <h2 data-se="o-form-head" class="okta-form-title o-form-head">Verify with your password</h2>
+                  <div class="o-form-error-container" data-se="o-form-error-container"></div>
+                  <div class="o-form-fieldset-container" data-se="o-form-fieldset-container">
+                    <div data-se="o-form-fieldset-credentials.passcode" class="o-form-fieldset o-form-label-top">
+                      <div data-se="o-form-label" class="okta-form-label o-form-label">
+                        <label for="input-password">Password&nbsp;</label>
+                      </div>
+                      <div data-se="o-form-input-container" class="o-form-input">
+                        <span data-se="o-form-input-credentials.passcode"
+                          class="o-form-input-name-credentials.passcode o-form-control okta-form-input-field input-fix">
+                          <input type="password" placeholder="" name="credentials.passcode" id="input-password"
+                            value="" aria-label="" autocomplete="off" class="password-with-toggle">
+                          <span class="password-toggle">
+                            <span class="eyeicon visibility-16 button-show"></span>
+                            <span class="eyeicon visibility-off-16 button-hide"></span>
+                          </span>
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="o-form-button-bar">
+                  <input class="button button-primary" type="submit" value="Verify" data-type="save">
+                </div>
+              </form>
+            </div>
+            <div class="siw-main-footer">
+              <div class="auth-footer">
+                <a data-se="forgot-password" href="#" class="link js-forgot-password disabled-link">Forgot
+                  password?</a>
+                <a data-se="cancel" href="index.html" class="link js-cancel">Back to sign in</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <script>
+    document.getElementById('verify-form').addEventListener('submit', function (e) {
+      e.preventDefault();
+      window.location.href = 'success.html';
+    });
+
+    // Password visibility toggle
+    var toggle = document.querySelector('.password-toggle');
+    if (toggle) {
+      toggle.addEventListener('click', function () {
+        var input = document.getElementById('input-password');
+        var parent = input.closest('.o-form-input-name-credentials\\.passcode');
+        if (input.type === 'password') {
+          input.type = 'text';
+          parent.classList.add('password-toggle-on');
+        } else {
+          input.type = 'password';
+          parent.classList.remove('password-toggle-on');
+        }
+      });
+    }
+  </script>
+</body>
+
+</html>

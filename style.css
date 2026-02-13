@@ -1,0 +1,62 @@
+/* Card positioning (from Kyndryl theme) */
+#okta-sign-in.auth-container.main-container {
+  margin-left: 5%;
+  margin-right: 0%;
+  width: 30%;
+  margin-top: 5%;
+}
+
+/* Green button (Kyndryl theme override) */
+#okta-sign-in .o-form-button-bar .button-primary {
+  background: #1a7f37;
+  border-color: #1a7f37;
+}
+
+#okta-sign-in .o-form-button-bar .button-primary:hover,
+#okta-sign-in .o-form-button-bar .button-primary:focus {
+  background: #15692d;
+  border-color: #15692d;
+}
+
+/* Disabled links */
+.link.disabled-link {
+  pointer-events: none;
+  opacity: 0.6;
+  cursor: default;
+}
+
+/* Okta FastPass disabled */
+.sign-in-with-device-option .link-button.disabled-link {
+  pointer-events: none;
+  opacity: 0.5;
+  cursor: default;
+}
+
+/* Success page */
+.success-container {
+  text-align: center;
+  padding: 30px 0;
+}
+
+.success-checkmark {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  background: #d4edda;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 20px;
+}
+
+.success-checkmark svg {
+  width: 32px;
+  height: 32px;
+  fill: #1a7f37;
+}
+
+.success-title {
+  font-size: 20px;
+  font-weight: 600;
+  color: #1a1a1a;
+}

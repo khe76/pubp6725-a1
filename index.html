@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex,nofollow">
+  <link rel="shortcut icon" href="https://ok14static.oktacdn.com/bc/image/fileStoreRecord?id=fs065jtu1l3MJDDU3697"
+    type="image/x-icon">
+  <title>Kyndryl oneID - Sign In</title>
+  <link rel="stylesheet" type="text/css"
+    href="https://ok14static.oktacdn.com/assets/js/sdk/okta-signin-widget/6.9.0/css/okta-sign-in.min.css"
+    crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css"
+    href="https://ok14static.oktacdn.com/assets/loginpage/css/custom-signin.a91af2abfd04662e499bd3e151150dbf.css"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="login-bg-image tb--background"
+    style="background-image: url('https://ok14static.oktacdn.com/fs/bco/7/fs065jtu208mQwndp697')"></div>
+  <div id="okta-login-container">
+    <main data-se="auth-container" tabindex="-1" id="okta-sign-in"
+      class="auth-container main-container no-beacon" style="display: block;">
+      <div class="okta-sign-in-header auth-header">
+        <h1><img src="https://ok14static.oktacdn.com/fs/bco/1/fs065jtu1jD9lsRia697" class="auth-org-logo"
+            alt="Kyndryl oneID logo" aria-label="Kyndryl oneID logo"></h1>
+        <div data-type="beacon-container" class="beacon-container"></div>
+      </div>
+      <div class="auth-content">
+        <div class="auth-content-inner">
+          <div class="siw-main-view identify primary-auth">
+            <div class="siw-main-header">
+              <div></div>
+            </div>
+            <div class="siw-main-body">
+              <form data-se="o-form" id="sign-in-form" class="ion-form o-form o-form-edit-mode">
+                <div data-se="o-form-content" class="o-form-content o-form-theme clearfix">
+                  <h2 data-se="o-form-head" class="okta-form-title o-form-head">Sign In</h2>
+                  <div class="o-form-error-container" data-se="o-form-error-container"></div>
+                  <div class="o-form-fieldset-container" data-se="o-form-fieldset-container">
+                    <div class="sign-in-with-device-option">
+                      <div class="okta-verify-container">
+                        <a data-se="button" class="button link-button link-button-icon disabled-link"
+                          href="#"><span class="icon okta-verify-authenticator"></span>Sign in with Okta
+                          FastPass</a>
+                      </div>
+                      <div class="separation-line"><span>or</span></div>
+                    </div>
+                    <div data-se="o-form-fieldset-identifier" class="o-form-fieldset o-form-label-top">
+                      <div data-se="o-form-label" class="okta-form-label o-form-label">
+                        <label for="input-username">Username&nbsp;</label>
+                      </div>
+                      <div data-se="o-form-input-container" class="o-form-input">
+                        <span data-se="o-form-input-identifier"
+                          class="o-form-input-name-identifier o-form-control okta-form-input-field input-fix">
+                          <input type="text" placeholder="" name="identifier" id="input-username" value=""
+                            aria-label="" autocomplete="username">
+                        </span>
+                      </div>
+                    </div>
+                    <div data-se="o-form-fieldset-rememberMe" class="o-form-fieldset o-form-label-top">
+                      <div data-se="o-form-input-container" class="o-form-input">
+                        <span data-se="o-form-input-rememberMe" class="o-form-input-name-rememberMe">
+                          <div class="custom-checkbox">
+                            <input type="checkbox" name="rememberMe" id="input-remember">
+                            <label for="input-remember" data-se-for-name="rememberMe">Keep me signed in</label>
+                          </div>
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="o-form-button-bar">
+                  <input class="button button-primary" type="submit" value="Next" data-type="save">
+                </div>
+              </form>
+            </div>
+            <div class="siw-main-footer">
+              <div class="auth-footer">
+                <a data-se="unlock" href="#" class="link js-unlock disabled-link">Unlock account?</a>
+                <a data-se="help" href="#" class="link js-help disabled-link">Help</a>
+                <a data-se="custom" href="#" class="link js-custom disabled-link">This system is being provided
+                  to you so that you can perform activities and tasks in support of Kyndryl business and your
+                  usage must comply with all applicable Kyndryl IT and security policies and the Kyndryl Code of
+                  Conduct.</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <script>
+    document.getElementById('sign-in-form').addEventListener('submit', function (e) {
+      e.preventDefault();
+      var username = document.getElementById('input-username');
+      var errorContainer = document.querySelector('.o-form-error-container');
+      var fieldset = username.closest('.o-form-fieldset');
+      var inputContainer = username.closest('.o-form-input');
+
+      if (username.value.trim() === '') {
+        errorContainer.innerHTML =
+          '<div class="okta-form-infobox-error infobox infobox-error" role="alert">' +
+          '<span class="icon error-16"></span>' +
+          '<p>We found some errors. Please review the form and make corrections.</p></div>';
+        fieldset.classList.add('o-form-has-errors');
+        if (!inputContainer.querySelector('.o-form-input-error')) {
+          var errorDiv = document.createElement('div');
+          errorDiv.className = 'o-form-input-error o-form-input-error-identifier';
+          errorDiv.setAttribute('role', 'alert');
+          errorDiv.innerHTML =
+            '<span class="icon icon-16 error-16-small" role="img" aria-label="Error"></span>' +
+            'This field cannot be left blank';
+          inputContainer.appendChild(errorDiv);
+        }
+      } else {
+        window.location.href = 'verify.html';
+      }
+    });
+
+    document.getElementById('input-username').addEventListener('input', function () {
+      document.querySelector('.o-form-error-container').innerHTML = '';
+      this.closest('.o-form-fieldset').classList.remove('o-form-has-errors');
+      var err = this.closest('.o-form-input').querySelector('.o-form-input-error');
+      if (err) err.remove();
+    });
+  </script>
+</body>
+
+</html>

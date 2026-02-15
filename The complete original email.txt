@@ -1,0 +1,133 @@
+##### 完整的邮件原文######
+
+Received: from CY8PR07MB9596.namprd07.prod.outlook.com (2603:10b6:930:54::21)
+ by SA0PR07MB7593.namprd07.prod.outlook.com with HTTPS; Fri, 13 Feb 2026
+ 21:17:17 +0000
+Received: from SN6PR01CA0017.prod.exchangelabs.com (2603:10b6:805:b6::30) by
+ CY8PR07MB9596.namprd07.prod.outlook.com (2603:10b6:930:54::21) with Microsoft
+ SMTP Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id
+ 15.20.9611.13; Fri, 13 Feb 2026 21:15:33 +0000
+Received: from SN1PEPF00036F3C.namprd05.prod.outlook.com
+ (2603:10b6:805:b6:cafe::bd) by SN6PR01CA0017.outlook.office365.com
+ (2603:10b6:805:b6::30) with Microsoft SMTP Server (version=TLS1_3,
+ cipher=TLS_AES_256_GCM_SHA384) id 15.20.9611.13 via Frontend Transport; Fri,
+ 13 Feb 2026 21:15:30 +0000
+Authentication-Results: spf=pass (sender IP is 79.135.106.102)
+ smtp.mailfrom=proton.me; dkim=pass (signature was verified)
+ header.d=proton.me;dmarc=pass action=none header.from=proton.me;compauth=pass
+ reason=100
+Received-SPF: Pass (protection.outlook.com: domain of proton.me designates
+ 79.135.106.102 as permitted sender) receiver=protection.outlook.com;
+ client-ip=79.135.106.102; helo=mail-106102.protonmail.ch; pr=C
+Received: from mail-106102.protonmail.ch (79.135.106.102) by
+ SN1PEPF00036F3C.mail.protection.outlook.com (10.167.248.20) with Microsoft
+ SMTP Server (version=TLS1_3, cipher=TLS_AES_256_GCM_SHA384) id 15.20.9611.8
+ via Frontend Transport; Fri, 13 Feb 2026 21:15:32 +0000
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=proton.me;
+	s=protonmail; t=1771017329; x=1771276529;
+	bh=0qgnuQ25vC8K5qu13JHjAFfs93khzIYEaSQlbF0N1D4=;
+	h=Date:To:From:Subject:Message-ID:Feedback-ID:From:To:Cc:Date:
+	 Subject:Reply-To:Feedback-ID:Message-ID:BIMI-Selector;
+	b=jm6rWt3/3nFzqV+JLWcDzApEFxRwt1GYGwfo/e80aJkm9RNUGPu0qCKYugUG/KXtM
+	 3ocQv3n9BBDKxwJSDxBfLd/LABLFHp2lyCpNoNhDuZk8D/gqdz2ocZP3wam7EmEOui
+	 jfZAjZyPMW4uIChmYwh6y3cYgtF76dJsaqEWSUJNMINSH5YmUDN+VUYm4RcQQhPohh
+	 5WaqjJEcIyjyNc/5Mqe7telhmndnfY9lLn3qe9mPi5mPO+2ZKLIessAXIRJaqrVKT5
+	 GQZYk2fiLta3K/xNkR8NRpReNeZ+mJRrRKjUGoJNV8iNIDxKP5Ak0kBoAhat7DTaG3
+	 yMS6aS/o1saow==
+Date: Fri, 13 Feb 2026 21:15:25 +0000
+To: "vkandhipati3@gatech.edu" <vkandhipati3@gatech.edu>
+From: Kyndryl Employee Rewards <kyndryl.rewards@proton.me>
+Subject: [Action Required] Kyndryl Anniversary Merch Selection for Nathan Smith
+Message-ID: <syT-xLfa9cl4DoYxeqOcW2fgeA_pHbXjm2U68km4J-3gqWEE2664d7phN2GZazd55UESO1DkCRiwkoJjJVF5tlQ8wfNS9U16DsLv3Yp_NVA=@proton.me>
+Feedback-ID: 181957596:user:proton
+X-Pm-Message-ID: c1da4b87280d1172ddb1d593dc45c8a9bb295eeb
+MIME-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="b1=_IXLoir057KEpb3t7DHe5iOjO1nQaYtiPDAUHtTt2Q0"
+Return-Path: kyndryl.rewards@proton.me
+X-MS-Exchange-Organization-ExpirationStartTime: 13 Feb 2026 21:15:32.8526
+ (UTC)
+X-MS-Exchange-Organization-ExpirationStartTimeReason: OriginalSubmit
+X-MS-Exchange-Organization-ExpirationInterval: 1:00:00:00.0000000
+X-MS-Exchange-Organization-ExpirationIntervalReason: OriginalSubmit
+X-MS-Exchange-Organization-Network-Message-Id:
+ 110f211b-01bd-4986-cc06-08de6b4505dd
+X-EOPAttributedMessage: 0
+X-EOPTenantAttributedMessage: 482198bb-ae7b-4b25-8b7a-6d7f32faa083:0
+X-MS-Exchange-Organization-MessageDirectionality: Incoming
+X-MS-PublicTrafficType: Email
+X-MS-TrafficTypeDiagnostic:
+ SN1PEPF00036F3C:EE_|CY8PR07MB9596:EE_|SA0PR07MB7593:EE_
+X-MS-Exchange-Organization-AuthSource:
+ SN1PEPF00036F3C.namprd05.prod.outlook.com
+X-MS-Exchange-Organization-AuthAs: Anonymous
+X-MS-Office365-Filtering-Correlation-Id: 110f211b-01bd-4986-cc06-08de6b4505dd
+X-MS-Exchange-AtpMessageProperties: SA|SL
+X-GT-Tenant: 042d12d7-75fe-4547-b5b6-0573f80f829d
+X-MS-Exchange-Organization-SCL: 1
+X-Microsoft-Antispam:
+ BCL:0;ARA:13230040|7093399015|30052699003|13003099007|8096899003|14062099003|54012099003;
+X-Forefront-Antispam-Report:
+ CIP:79.135.106.102;CTRY:CH;LANG:en;SCL:1;SRV:;IPV:NLI;SFV:NSPM;H:mail-106102.protonmail.ch;PTR:mail-106102.protonmail.ch;CAT:NONE;SFTY:9.25;SFS:(13230040)(7093399015)(30052699003)(13003099007)(8096899003)(14062099003)(54012099003);DIR:INB;SFTY:9.25;
+X-MS-Exchange-CrossTenant-OriginalArrivalTime: 13 Feb 2026 21:15:32.5417
+ (UTC)
+X-MS-Exchange-CrossTenant-Network-Message-Id: 110f211b-01bd-4986-cc06-08de6b4505dd
+X-MS-Exchange-CrossTenant-Id: 482198bb-ae7b-4b25-8b7a-6d7f32faa083
+X-MS-Exchange-CrossTenant-AuthSource:
+ SN1PEPF00036F3C.namprd05.prod.outlook.com
+X-MS-Exchange-CrossTenant-AuthAs: Anonymous
+X-MS-Exchange-CrossTenant-FromEntityHeader: Internet
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: CY8PR07MB9596
+X-MS-Exchange-Transport-EndToEndLatency: 00:01:44.4819476
+X-MS-Exchange-Processed-By-BccFoldering: 15.20.9611.001
+X-MS-Exchange-ExternalInOutlookResult: IsExternal
+X-Microsoft-Antispam-Mailbox-Delivery:
+	ucf:0;jmr:0;auth:0;dest:I;ENG:(910005)(944506478)(944626604)(4710137)(4712097)(4999163)(920097)(930201)(20251009189)(140003)(1420198);
+X-Microsoft-Antispam-Message-Info:
+	=?us-ascii?Q?GHl6gro7IIwBY/SOKXgBLQFvlWiiK+dg1vYjHKb9iYEV3RaBJAnAccGgePnm?=
+ =?us-ascii?Q?krr7yIdWywmw5YqYXLFLstbrAIYfK9vTJ8eXlKY8N5MPv5llU85793YyrHto?=
+ =?us-ascii?Q?j+O50PowzJLlAXxxW72QCAW5oifldIzGAoLDgJyvw5EgpeLGqkW8FBjC1ZTv?=
+ =?us-ascii?Q?haEsCUXkaBdKOHxlZZCEtZkAcsI1jOdRNeG2Gm/LCQhr/rPMAN24xxadyhDx?=
+ =?us-ascii?Q?UZbk3ZwFvf0TBZMrSgNrHDfb7mGZ+K10aLDh8J8+kMxTXv8hz5KEjgaVjWgJ?=
+ =?us-ascii?Q?QHbxZ5ZhnMHqGMKyZE2y3Enf366zVyx7WA4Q0QbT0+fomEFur6oWb/4qI75Q?=
+ =?us-ascii?Q?r7iq155usorxpcIXc171nstA+HIztjQoupvztdNo6B42HoLt8+9bB8LWwVT4?=
+ =?us-ascii?Q?mHN/cnWPo+oPryg13oTF6mvAUvWEbV2R3Cd0jLfCFmfEFGhiPpibuK+YbTTo?=
+ =?us-ascii?Q?dpmMe/7KzmJ0seS6JDbaTa668YrYsAOWVlbmvbHnc3HKBObpVd7TUWzn5EDJ?=
+ =?us-ascii?Q?ot34m9GqSDJjNbUmFiFXfMKcD4cz4G/jiRQ3ptA1YQ/TgBXeZDAEyji7Z/Jn?=
+ =?us-ascii?Q?OtaEqP0YOjpSVe2J1zbe02jLGw9Ay1Lm4oNawGrrKwz9FEVZL30go8uIkqLr?=
+ =?us-ascii?Q?gPIkROEkR0ZR75S5gnPyJnzHRvdiQT9Cl/meIwJq/zvyt0zb+x8bPecxpXHc?=
+ =?us-ascii?Q?c/QOIJy6eOpbQ2080CJTqFOQKMJwYz8WZoXtuUaHHRudgEWORD7hLOoiKvng?=
+ =?us-ascii?Q?eZ8Vi+swOKa9ABfXHe056ewo69QiO6tqV4zIA/fq0Nz+aIycpm3ABcVXHL6Z?=
+ =?us-ascii?Q?sCCNWJVIATK13XgN/5Qpxr0+ohUu03vbOtLhJH7BWh62HsUJ118ZFCbkE05R?=
+ =?us-ascii?Q?e1Lfkg1SX4OTShesRvFHHf20KcmLiLuYpDnIFxJ0e36nW+ZGQGrdvAy5kJFZ?=
+ =?us-ascii?Q?+ybl5LciEUZwt8cQ7x5f1h2k4iwbb/sW2SsZLOZEw03UnAjetChoYdzHg9ac?=
+ =?us-ascii?Q?ZQXvpMyDP4q8sQ1F4mI+KqoPHLpNyrSRtIRG/3q0IwBsOLoxo+Jmkoz4Yk7E?=
+ =?us-ascii?Q?7fzzT1ebuG9AGGVpODy5L7FqRdUK10Ys2O7x2pLqehcD1oEPsj3gXlj3Wcsh?=
+ =?us-ascii?Q?qXkEzKmsT0bbYxdERX7lsB6dkBl5OzaOfbQlHuRGM1fm7FiKzhx76AMoA5nJ?=
+ =?us-ascii?Q?a4kreP3l4Qrruwcy72Y4L8eZhd8rfwEPN3VbuUHnUK5pek53t9smTCRQTuAp?=
+ =?us-ascii?Q?aXY7RN9+EtAFmCOY9JRdPnaZvNALPte/hm7bOeYvztT8aHV+OC6Szq+NnjOQ?=
+ =?us-ascii?Q?WitP+mbNS01pAmyW5/FoULC29+Hfs8+vTSiXf9NOrQv88FWkbNTfcNOi28iK?=
+ =?us-ascii?Q?68/TfGVioln7CFv0acXicSVr/YBZxbaQzON/gdL7Nsux+MIv85tV81jncesO?=
+ =?us-ascii?Q?YN6jYjgJii+aX8yaWg7NA56sNxWsC4cojRzwQ+7rB64J8iNI6hDbAZVf8Mgk?=
+ =?us-ascii?Q?/jol0zh31XIe8bSqf+XwKvTrcEKpUPX7vKrufIzWVqKfSQhLFkNv77X/MVqF?=
+ =?us-ascii?Q?MztjBOWYY8dVQdaWy9pMh+A4PajNk3qQ9GhE4VUvlF0gg1GyNyGqzV+RnO+z?=
+ =?us-ascii?Q?Yn+MPy4rfXCeyC6D2+3SgO5jMGSkTRgK1OamMmiZPM7jMjHzGEhjXnm+V8xG?=
+ =?us-ascii?Q?dNLCpjR9Y5o6eFUCMt+tBMWEwiUC6ftDLvt2EqUAH+LU5fhrH6swOzoEQvd8?=
+ =?us-ascii?Q?gYl4SCFt9ht2j29WGqxgUcDo3WZwvroxkqNZaB85t6ESJ6e++JGamm+LIQkN?=
+ =?us-ascii?Q?TMvv05GRMIYkyPyB8tU8LfgP6yUjDEnKn/stkGkfl+VhhlHtdUEjHo+g+GvB?=
+ =?us-ascii?Q?Q9UG6hxeYP80PndtaS4CDixcqaXuYOOtgYQTS/RKtnYP5wKbdLaImPLcImOv?=
+ =?us-ascii?Q?+MCMG+aHoz3qwjpua2C85SFyqnHHQy02AXhEbM//FwaxFNWmbKKxZjmR8H8R?=
+ =?us-ascii?Q?fVK2kiX0DqIbFSh5vcugC1smWuius+ozFkoD8gTIhOR6g8SMA+Q8iZb0pHuq?=
+ =?us-ascii?Q?UtuV+PlLXoe07lSubMooRrvuSmvMi673vNvGfoWIjYxwHhe/LurzzELNkpsK?=
+ =?us-ascii?Q?i1MysLl1oP2JtneEpHGGGFIajrXRlvXde7ehUR3usrpoPPYx73xu7sR6ooss?=
+ =?us-ascii?Q?aBTSMFCMAbvWrerkCHrJB9FO04BNKjhfnoqrgLfSeXcW0ujgpdzsRiC8ykoU?=
+ =?us-ascii?Q?XrTonWnagJhu9z7wZ2RT/BLMDniOVVyz5vqqd9jSZZxx58Jv2LeDGkUsoYMQ?=
+ =?us-ascii?Q?eSGr04HI0584mc0Bui2YiSJlOokJ4GighOInt/ndu1v2136KXmWsVe+L1w4z?=
+ =?us-ascii?Q?y9KDTD2Vb/2U53fvwzu76igI1nqYKQUIgWkeYpURNY77IqQfSFQLznpGBm1F?=
+ =?us-ascii?Q?bQtxsMcQU/pfkIvYV+sjDjg/6dGkYY9yGShLOlyqLHn0jm4tiXuc9G7/cfpD?=
+ =?us-ascii?Q?Z46bkm2HKLLpYwTeAKPl4UBo7N+ZhE0lu/jQk2Xcf/IJZG99iytTjsL/0aLX?=
+ =?us-ascii?Q?PgiRI6rLYuRzVOVXcGyzES/FkDMd0RSTHz452AHhvXD9Jl8j3nHqv5mBpnjT?=
+ =?us-ascii?Q?xrNNfXFPMM6tjg3PqMPyR/AJVfJKloNeUPUdm1SHKpryHkych/0HRzHDMqDT?=
+ =?us-ascii?Q?VMQh59NKo8XCLUOHP8fgqV9fDx9bFektqDURCtIDkidMFJtQwFEK1vqRJZrp?=
+ =?us-ascii?Q?Y3rmHzCXH4khTwGXheQVUIZDOud8vbyIS61acQXokw1EfTrHewCIqXGhg0/u?=
+ =?us-ascii?Q?8fQpAuXXAds1XhlL+jGSNzxNgQwWbMD/Pdt93xw1WEIBo0DZzpbf7WWv?=
